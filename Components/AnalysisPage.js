@@ -30,7 +30,7 @@ export default function AnalysisPage({ route }) {
 
     // Download the processed audio from the server
     RNFS.downloadFile({
-      fromUrl: `http://192.168.0.109:5000/static/muted_audio_${getFileAudioUID()}.wav`, // The URL where the audio is hosted (Flask server)
+      fromUrl: `http://192.168.0.103:5000/static/muted_audio_${getFileAudioUID()}.wav`, // The URL where the audio is hosted (Flask server)
       toFile: downloadPath, // Path on the device to save the file in Downloads
     })
       .promise.then(() => {
@@ -82,7 +82,7 @@ export default function AnalysisPage({ route }) {
 
     // Download the audio file again (this is a simple method; you can enhance it)
     RNFS.downloadFile({
-      fromUrl: `http://192.168.0.109:5000/static/muted_audio_${getFileAudioUID()}.wav`, // The URL where the audio is hosted (Flask server)
+      fromUrl: `http://192.168.0.103:5000/static/muted_audio_${getFileAudioUID()}.wav`, // The URL where the audio is hosted (Flask server)
       toFile: downloadPath, // Path on the device to save the file in Downloads with custom name
     })
       .promise.then(() => {

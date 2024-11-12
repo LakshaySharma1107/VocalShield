@@ -57,7 +57,7 @@ export default function ProcessPage() {
     formData.append('model', selectedModel); // Add the selected model to the form data
 
     try {
-      const response = await axios.post('http://192.168.0.109:5000/process-audio', formData, {
+      const response = await axios.post('http://192.168.0.103:5000/process-audio', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -122,7 +122,7 @@ export default function ProcessPage() {
 
         {processedAudio && (
           <TouchableOpacity
-            style={styles.button}
+            style={styles.button1}
             onPress={() => {
               navigation.navigate('AnalysisPage', { processedAudio });
             }}
