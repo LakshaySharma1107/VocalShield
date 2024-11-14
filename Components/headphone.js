@@ -16,8 +16,11 @@ export default function Headphone(){
     <Image 
       source={require("../Headphone_icon.png")}
       />
-   <Text style={styles.overlayText1}>Voice</Text>
-   <Text style={styles.overlayText2}>Censorship</Text>
+   <Text style={styles.overlayText1}>Vocal</Text>
+   <Text style={styles.overlayText2}>Shield</Text>
+   {/* <Text style={styles.overlayText3}>Using NLP and DL</Text> */}
+
+
    </View>
 
   )
@@ -37,17 +40,25 @@ const styles = StyleSheet.create({
  
     position: 'absolute',
     color: '#000', // Text color
-    fontSize: 34, // Text size
+    fontSize: 48, // Text size
     fontWeight: 'bold', // Text weight
-    fontFamily:'Poppins-Medium'
-  
+    fontFamily:'Poppins-Medium',
   },
   overlayText2: {
     paddingTop:100,
     position: 'absolute',
     color: '#000', // Text color
-    fontSize: 34, // Text size
+    fontSize: 48, // Text size
     fontWeight: 'bold', // Text weight
     fontFamily:'Poppins-Medium'
+  },
+  overlayText3: {
+    paddingTop:200,
+    position: 'absolute',
+    color: '#000', // Text color
+    fontSize: 22, // Text size
+    fontWeight: 'bold', // Text weight
+    fontFamily:'Poppins-Medium'
+  
   },
 });

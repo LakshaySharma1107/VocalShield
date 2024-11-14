@@ -55,9 +55,9 @@ export default function ProcessPage() {
       name: audioFile.name,
     });
     formData.append('model', selectedModel); // Add the selected model to the form data
-
+//'http://192.168.0.103:5000/process-audio'
     try {
-      const response = await axios.post('http://192.168.0.103:5000/process-audio', formData, {
+      const response = await axios.post('http://192.168.0.105:5000/process-audio', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

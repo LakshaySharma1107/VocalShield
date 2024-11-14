@@ -30,7 +30,7 @@ export default function AnalysisPage({ route }) {
 
     // Download the processed audio from the server
     RNFS.downloadFile({
-      fromUrl: `http://192.168.0.103:5000/static/muted_audio_${getFileAudioUID()}.wav`, // The URL where the audio is hosted (Flask server)
+      fromUrl: `https://3a1a-103-31-41-153.ngrok-free.app/static/muted_audio_${getFileAudioUID()}.wav`, // The URL where the audio is hosted (Flask server)
       toFile: downloadPath, // Path on the device to save the file in Downloads
     })
       .promise.then(() => {
@@ -239,6 +239,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     fontSize: 16,
     fontFamily: 'Poppins',
+    color:'black'
   },
   inputLabel: {
     fontFamily: 'Poppins',
