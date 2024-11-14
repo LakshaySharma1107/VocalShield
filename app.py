@@ -306,5 +306,6 @@ def serve_and_delete_file(filename):
         pass
     #     abort(500, description=str(e))
 
+# Flask Server will be available to anyone on 5000 port
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000) 
